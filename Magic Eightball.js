@@ -1,3 +1,5 @@
+
+//The person's name
 let userName = 'Chad';
 
 //Question the user asks
@@ -8,9 +10,11 @@ const randomNumber = Math.floor(Math.random() *8);
 
 let eightBall = '';
 
+//This will have the console reply to the user, or simply say hello if there is no name
 userName ? console.log(`Hello, ${userName}`):
 console.log('Hello!');
 
+//This will print the question, or tell the user to ask a question if there
 userQuestion ? console.log(`${userName} asked ${userQuestion}`):
 console.log('Ask a question.');
 
