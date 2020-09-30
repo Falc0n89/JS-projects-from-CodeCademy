@@ -47,4 +47,15 @@ const getUserChoice = userInput => {
       }
     }
   }
-  console.log(determineWinner('paper', 'rock'));
+  
+  const playGame = () => {
+    const userChoice = getUserChoice('scissors');
+    let computerChoice = getComputerChoice();
+    console.log('You threw:' + userChoice);
+  console.log('The computer threw:' + computerChoice);
+  console.log(determineWinner(userChoice,computerChoice));
+  };
+  
+  
+  
+  playGame();
