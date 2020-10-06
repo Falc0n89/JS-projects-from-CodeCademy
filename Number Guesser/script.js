@@ -12,9 +12,18 @@ const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
    return true;
  } else if(Math.abs(humanGuess - secretTarget) > Math.abs(computerGuess - secretTarget)) {
    return false;
- }
+ };
 }
+//not sure if this works yet. Getting undefined
+const updateScore = (winner) => {
+  if  (winner === 'human') {
+    humanScore++
+    } else {
+      computerScore++
+     } 
+};
 
-console.log(compareGuesses(1, 2, 1));
-
+console.log(compareGuesses(1, 5, 4));
+console.log(updateScore('human'));
 console.log(generateTarget());
+
