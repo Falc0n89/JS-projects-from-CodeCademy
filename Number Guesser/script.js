@@ -14,16 +14,22 @@ const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
    return false;
  };
 }
-//not sure if this works yet. Getting undefined
-function updateScore(winner) {
-    if (winner === 'human') {
-        humanScore++;
+
+const updateScore = (winner) => {
+  if  (winner === 'human') {
+    humanScore++
     } else {
-        computerScore++;
-    }
+      computerScore++
+     } 
+};
+
+const advanceRound = () => {
+   return currentRoundNumber ++ 
 }
 
 console.log(compareGuesses(1, 5, 4));
 console.log(updateScore('human'));
 console.log(generateTarget());
+
+
 
