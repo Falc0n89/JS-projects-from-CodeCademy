@@ -4,6 +4,8 @@ You can use the [editor on GitHub](https://github.com/Falc0n89/JS-projects-from-
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+[Number Guesser Game!](https://falc0n89.github.io/JS-projects-from-CodeCademy/Number%20Guesser/index.html) 
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
