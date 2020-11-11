@@ -47,5 +47,5 @@ const logInfo = () => {
  console.log('You used basically ' + basicallyCount + ' times');
 };
 
-
 logInfo();
+console.log(betterWords.join(' '));
