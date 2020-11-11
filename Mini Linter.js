@@ -18,6 +18,9 @@ const betterWords = storyWords.filter(word => {
 let reallyCount = 0;
 let veryCount = 0;
 let basicallyCount = 0;
+let overusedTotal = () => {
+ return (reallyCount + veryCount + basicallyCount);
+}
 
 for (word of storyWords) {
   if (word === 'really') {
@@ -27,6 +30,22 @@ for (word of storyWords) {
   } else if (word === 'basically') {
     basicallyCount += 1
   }
-}
+};
+
+let sentenceCount = 0;
+storyWords.forEach(word => {
+  if (word[word.length-1] === '.' || word[word.length-1] === '!') {
+    sentenceCount+=1;
+  }
+});
+
+const logInfo = () => {
+  console.log('Word count: ' + storyWords.length);
+  console.log('Sentence count: ' + sentenceCount);
+  console.log('You used really ' + reallyCount + ' times');
+ console.log('You used very ' + veryCount + ' times');
+ console.log('You used basically ' + basicallyCount + ' times');
+};
 
 
+logInfo();
